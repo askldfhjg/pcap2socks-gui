@@ -215,7 +215,7 @@ pub fn run_shadowsocks(
         Err(e) => return Err(e.into()),
     };
     server_config.set_mode(Mode::TcpAndUdp);
-    let mut local_config = LocalConfig::new(
+    let mut local_config = LocalConfig::new_with_addr(
         ServerAddr::SocketAddr(SocketAddr::V4(local)),
         ProtocolType::Socks,
     );
