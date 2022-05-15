@@ -23,7 +23,6 @@ pcap2socks = { git = "https://github.com/askldfhjg/pcap2socks" }
 rand = "0.8.5"
 serde_json = "1.0.81"
 serde = { version = "1.0.137", features = [ "derive" ] }
-shadowsocks-service = { version = "1.14.3", default-features = false, features = [ "local", "stream-cipher" ] }
 tauri = { version = "1.0.0-rc.8", features = [] }
 tokio = { version = "1.18.2", default-features = false, features = [ "time", "macros" ] }
 
