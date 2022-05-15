@@ -41,7 +41,7 @@ jobs:
         if: matrix.os == 'windows-latest'
       - name: Download WinPcap Developer Pack
         run: |
-          Invoke-WebRequest -OutFile WpdPack.zip https://www.winpcap.org/install/bin/WpdPack_4_1_3.zip
+          Invoke-WebRequest -OutFile WpdPack.zip https://www.winpcap.org/install/bin/WpdPack_4_1_2.zip
           7z x WpdPack.zip
           cp WpdPack/Lib/x64/Packet.lib src-tauri/Packet.lib
         if: matrix.os == 'windows-latest'
